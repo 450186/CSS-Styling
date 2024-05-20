@@ -1,0 +1,82 @@
+body { 
+    margin: 0; /* Remove the default margin */
+}
+
+#images { 
+    /* Use flexbox to arrange the images in a row */
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+img { 
+    /* Prevent images from exceeding the width of their parent */
+    max-width: 100%;
+    height: auto;
+}
+
+#click-me {
+    /* Centre the button */
+    display: block;
+    margin: auto;
+
+    /* Style the button to look nice */
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.img-container{
+    /* overflow: hidden; */
+    max-width: 25%;
+}
+
+#img-B {
+    filter: blur(5px);
+}
+
+#img-C {
+    filter: grayscale(100%);
+}
+button {
+    max-width: 25%;
+}
+#img-D {
+    filter: drop-shadow(7px 7px 10px grey);
+}
+#img-E {
+    filter: invert(50);
+}
+#img-F {
+    filter: opacity(45%);
+}
+#img-G {
+    filter: hue-rotate(180deg);
+}
+#img-H {
+    filter: saturate(10);
+}
+#img-I {
+    filter: sepia(50%);
+}
+
+.zoom {
+    display: flex;
+    transition: transform 0.5s;
+}
+
+
+
+.zoom:hover{
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+h1 {
+    text-align: center;
+}
